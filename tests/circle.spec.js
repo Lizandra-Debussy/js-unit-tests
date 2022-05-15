@@ -29,7 +29,7 @@ describe('4 - Implemente os casos de teste para a função `circle`', () => {
   });
   // Teste se circle retorna undefined, caso o parâmetro passado não seja um número.
   it('Verifica se caso o parâmetro passado não seja um número, a função `circle` retorna undefined', () => {
-    expect(circle('string')).toBe(undefined);
+    expect(circle('string')).toBeUndefined();
   });
   // Teste se circle retorna um objeto.
   it('Verifica se a função `circle` retorna um objeto', () => {
@@ -43,7 +43,7 @@ describe('4 - Implemente os casos de teste para a função `circle`', () => {
   });
   // Teste se a função, quando não recebe nenhum parâmetro, retorna undefined.
   it('Verifica se a função retorna undefined quando não recebe parâmetro', () => {
-    expect(circle()).toBe(undefined);
+    expect(circle()).toBeUndefined();
   });
   // Teste se dentro do objeto retornado, a função retorna uma `key` com `value` igual à circunferência correta para um círculo de raio 2.
   it('Verifica se o objeto retorna uma `key` com `value` igual à circunferência correta para um círculo de raio 2', () => {
