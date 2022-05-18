@@ -34,27 +34,29 @@
 */
 
 const calculator = (number1, number2) => {
-//  let object = {
-//   sum: number1 + number2,
-//   mult: number1 * number2,
-//   div: Math.floor(number1 / number2),
-//   sub: number1 - number2,
-//  }
-//  return object;
+ let objeto = {
+  sum: number1 + number2,
+  mult: number1 * number2,
+  div: Math.floor(number1 / number2),
+  sub: number1 - number2,
+ };
+ return objeto;
 };
 // console.log(calculator(3, 2));
 const arrayGenerator = (type, object) => {
+  const objec = object;
+  let arr;
 
-//  if (typeof type === 'keys') {
-//   return Object.keys(object);
-//  }
-//  if (typeof type === 'values') {
-//    return Object.values(object);
-//  }
-//  if (typeof type === 'entries') {
-//   return Object.entries(object);
-//  }
-//  return [];
+ if (type === 'keys') {
+  arr = Object.keys(objec);
+ }
+ if (type === 'values') {
+  arr = Object.values(objec);
+ }
+ if (type === 'entries') {
+  arr = Object.entries(objec);
+ }
+ return arr;
 };
 
 module.exports = { calculator, arrayGenerator };
