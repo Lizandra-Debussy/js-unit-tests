@@ -42,7 +42,7 @@ const calculator = (number1, number2) => {
  };
  return objeto;
 };
-// console.log(calculator(3, 2));
+
 const arrayGenerator = (type, object) => {
   const objec = object;
   let arr;
