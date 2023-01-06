@@ -22,5 +22,5 @@ const createStudent = (nome) => {
   };
   return estudante;
 };
-// console.log(createStudent("Leandrao, o Lobo Solitário"));
+
 module.exports = createStudent;
